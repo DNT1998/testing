@@ -1,0 +1,443 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock title %}
+
+{% block body %}
+<tr>
+		<td >
+		<center>
+		
+		<table width="100%" border="0">
+	  <tr>
+		
+		<!--Registration form-->
+		
+		<td>
+		<div id="container1"><br />
+	
+	<form id="forml" name="forml" method="post" action="#" onSubmit="return valid(this)"  onsubmit="return checkform(this);">
+	
+	<table width="100%" border="0"  bgcolor="#FFFFFF">
+	  <tr>
+		<td colspan="2"> <center><h1>Registration Detail</h1></center> </td>
+		</tr>
+		<tr><td colspan="2">
+			<font color="#FF8000" ><h2>Contact Information</h2></font>
+		</td></tr>
+		
+		<tr><td width="150px"><br />	First Name :</td> <td ><br />	<input type="text" name="t1" placeholder="Enter First Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;" />	</td></tr>
+		
+		<tr><td><br />	Last Name : </td>	<td><br />	<input type="text" name="t2" placeholder="Enter Last Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>	</td></tr>
+		
+		<tr><td><br />	Middle Name : </td>  <td><br />	<input type="text" name="t3" placeholder="Enter Middle Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>	</td></tr>
+		
+	
+		<tr><td><br />	Father's Name : </td> <td><br />	<input type="text" name="t4" placeholder="Enter Father's name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br />	Date of Birth : </td> <td><br />  <input type="date" name="t5"  style="padding-left:5px; width:350px; height:25px;"/>  </td></tr>
+		
+		<tr><td><br />	Mobile No. :</td> <td><br />  <input type="tel" name="t6" placeholder="Enter Enter Mobile No." style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br />	Lendline No. :</td><td><br /> <input type="tel" name="t7" placeholder="Enter Enter Lendline No." style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br />	Emaid-id :</td><td><br />  <input type="text" name="t8" placeholder="Example 123@gmail.com" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>  </td></tr>
+		<tr><td><br />	Aadhar Card :</td><td><br />  <input type="text" name="t9" placeholder="Enter Aadhar No." style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>  </td></tr>
+		
+		<tr><td><br />	Photo :</td><td><br />  <input type="file" name="f" />  </td></tr>
+		
+		<tr><td colspan="2"><br /> <h2>Address Information</h2></td></tr>
+		
+		<tr><td><br /> Address Line 1 : </td> <td><br /> <input type="text" name="t10" placeholder="Enter House/Flat No." style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>  </td></tr>
+		
+		<tr><td><br /> Address Line 2 : </td> <td><br /> <input type="text" name="t11" placeholder="Enter Address" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br /> City : </td> <td><br /> <input type="text" name="t12" placeholder="Enter City" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br />District : </td> <td><br /> <input type="text" name="t13" placeholder="Enter District" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br /> Tehsil : </td><td><br /> <input type="text" name="t14" placeholder="Enter Tehsil" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br /> State : </td><td><br /> <input type="text" name="t15" placeholder="Enter State" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br /> Country : </td><td><br /> <input type="text" name="t16" placeholder="Enter Country" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br /> Pincode : </td><td><br /> <input type="text" name="t17" placeholder="Enter Pin Code" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td colspan="2"><br /><font color="#00CC33" ><h2> Party Information </h2></font></td></tr>
+		
+		<tr><td><br /> Party Name : </td> <td><br /> <input type="text" name="t18" placeholder="Enter Party Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br /> Candidate Name : </td><td><br /> <input type="text" name="t19" placeholder="Enter Full Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br /> Vidhan sabha no. : </td><td><br /> <input type="text" name="t19" placeholder="Enter Nmber" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+		
+		<tr><td><br /> Logo : </td> <td><br /> <input type="file" name="t20" /> </td></tr>
+		
+		<tr><td><br /> Captcha : </td> <td><br /> 
+		<!-- START CAPTCHA -->
+	<br>
+	<div class="capbox">
+	<div id="CaptchaDiv"></div>
+	<div class="capbox-inner">
+	Type the above number:<br>
+	
+	<input type="hidden" id="txtCaptcha">
+	<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+	
+	</div>
+	</div>
+	<br><br>
+	<!-- END CAPTCHA -->
+	
+		</td></tr>
+		
+		<tr><td><br />  </td> <td><br /> <input type="checkbox" name="t22" /> I accept all <a href="#" style="text-decoration:none;">terms & conditions</a>  . </td></tr>
+		<tr><td colspan="2"><br /><br /> 
+		Sign. : <input type="text" name="t23" placeholder="Enter Name" style="border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000; padding-left:5px; width:170px; height:25px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Place : <input type="text" name="t24" placeholder="Enter Place" style="border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000; padding-left:5px; width:170px; height:25px;" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		Date : <input type="text" name="t25" placeholder="Enter Current Date" style="border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000; padding-left:5px; width:170px; height:25px;" /> </td></tr>
+		
+		<tr><td colspan="2"><br /><br /><br /><center><input type="button" name="t22" value="Submit" style="width:200px; height:50px; background-color:#0033FF; color:#FFFFFF; font-size:20px;" /></center></td></tr>
+		
+	</form>
+	<script type="text/javascript">
+	
+	// Captcha Script
+	
+	function checkform(theform){
+	var why = "";
+	
+	if(theform.CaptchaInput.value == ""){
+	why += "- Please Enter CAPTCHA Code.\n";
+	}
+	if(theform.CaptchaInput.value != ""){
+	if(ValidCaptcha(theform.CaptchaInput.value) == false){
+	why += "- The CAPTCHA Code Does Not Match.\n";
+	}
+	}
+	if(why != ""){
+	alert(why);
+	return false;
+	}
+	}
+	
+	var a = Math.ceil(Math.random() * 9)+ '';
+	var b = Math.ceil(Math.random() * 9)+ '';
+	var c = Math.ceil(Math.random() * 9)+ '';
+	var d = Math.ceil(Math.random() * 9)+ '';
+	var e = Math.ceil(Math.random() * 9)+ '';
+	
+	var code = a + b + c + d + e;
+	document.getElementById("txtCaptcha").value = code;
+	document.getElementById("CaptchaDiv").innerHTML = code;
+	
+	// Validate input against the generated number
+	function ValidCaptcha(){
+	var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+	var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+	if (str1 == str2){
+	return true;
+	}else{
+	return false;
+	}
+	}
+	
+	// Remove the spaces from the entered and generated code
+	function removeSpaces(string){
+	return string.split(' ').join('');
+	}
+	</script>
+		</div></td>
+	  </tr>
+	</table>
+	
+		</center>
+		</td></tr>
+
+{% endblock body %}
+
+
+
+
+<!--waste code-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Voting</title>
+
+<!--for menu-->
+
+<link rel="stylesheet" href="/static/source/style1.css" type="text/css" />
+<link rel="stylesheet" href="/static/slider/style1.css" type="text/css" />
+<script src="static/slider/script.js" type="text/jscript">
+</script>
+<style type="text/css">
+<!--
+.style4 {font-size: 100px}
+.style7 {font-size: 35px}
+-->
+</style>
+
+<style>
+
+#container1{
+background-color: #FFFFFF;
+width: 800px;
+height: 1850px;
+margin:auto;
+border:solid 1px;
+border-radius: 20px 20px 20px 20px;
+padding:20px;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+.capbox {
+	background-color: #92D433;
+	border: #B3E272 0px solid;
+	border-width: 0px 12px 0px 0px;
+	display: inline-block;
+	*display: inline; zoom: 1; /* FOR IE7-8 */
+	padding: 8px 40px 8px 8px;
+	}
+
+.capbox-inner {
+	font: bold 11px arial, sans-serif;
+	color: #000000;
+	background-color: #DBF3BA;
+	margin: 5px auto 0px auto;
+	padding: 3px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+#CaptchaDiv {
+	font: bold 17px verdana, arial, sans-serif;
+	font-style: italic;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+#CaptchaInput { margin: 1px 0px 1px 0px; width: 135px; }
+
+</style>
+
+</head>
+
+<body><center>
+<table width="100%" border="0"  bgcolor="#FFFFFF">
+  <tr>
+    <td height="50">
+	<table width="100%" border="0">
+      <tr> <td width="25%" height="100">
+		
+		<!--Left Logo-->
+		
+		<div align="center"><img src="photo/LOGO.jpg" width="200" height="100" /><br />  </div>
+		</td>
+        
+        <td width="50%">
+		
+		<!--Header Title-->
+		
+		<div align="center"><p class="style12"><span class="style7"> <font color="#FF8000" style="font-size:40px;" > Indian </font><font style="font-size:40px;;" color="#000000" > Government</font><font color="#00CC33" style="font-size:40px;;" > Voting </font></span></p></div>
+          <p> </p>
+		  
+		</td>	<!--Right Logo-->
+		<td width="25%"><div align="center"><img src="photo/LOGO 1.jpg" width="200" height="100" /><br /> </div></td>
+     
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="70">	<!--menu bar -->
+	
+	
+	<div class="container black  borderYtoX">
+	<a href="index.html">Home</a>
+	<a href="about_us.html">About us</a>
+	<a href="voter_login.html">Voter Login</a>
+	<a href="voter_list.html">Voter list</a>
+	<a href="tehsil_registration.html">Tehsil Registration</a>
+	<a href="party_registration.html">Party Registration</a>
+	<a href="party_list.html">Party List</a>
+	<a href="help.html">Help</a>
+	<a href="contact_us.html">Contact us</a>
+</div>
+	
+	</td>
+  </tr>
+  <tr>
+    <td >
+	<center>
+	
+	<table width="100%" border="0">
+  <tr>
+	
+	<!--Registration form-->
+	
+    <td>
+	<div id="container1"><br />
+
+<form id="forml" name="forml" method="post" action="#" onSubmit="return valid(this)"  onsubmit="return checkform(this);">
+
+<table width="100%" border="0"  bgcolor="#FFFFFF">
+  <tr>
+    <td colspan="2"> <center><h1>Registration Detail</h1></center> </td>
+	</tr>
+	<tr><td colspan="2">
+		<font color="#FF8000" ><h2>Contact Information</h2></font>
+	</td></tr>
+	
+	<tr><td width="150px"><br />	First Name :</td> <td ><br />	<input type="text" name="t1" placeholder="Enter First Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;" />	</td></tr>
+	
+	<tr><td><br />	Last Name : </td>	<td><br />	<input type="text" name="t2" placeholder="Enter Last Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>	</td></tr>
+	
+	<tr><td><br />	Middle Name : </td>  <td><br />	<input type="text" name="t3" placeholder="Enter Middle Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>	</td></tr>
+	
+
+	<tr><td><br />	Father's Name : </td> <td><br />	<input type="text" name="t4" placeholder="Enter Father's name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br />	Date of Birth : </td> <td><br />  <input type="date" name="t5"  style="padding-left:5px; width:350px; height:25px;"/>  </td></tr>
+	
+	<tr><td><br />	Mobile No. :</td> <td><br />  <input type="tel" name="t6" placeholder="Enter Enter Mobile No." style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br />	Lendline No. :</td><td><br /> <input type="tel" name="t7" placeholder="Enter Enter Lendline No." style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br />	Emaid-id :</td><td><br />  <input type="text" name="t8" placeholder="Example 123@gmail.com" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>  </td></tr>
+	<tr><td><br />	Aadhar Card :</td><td><br />  <input type="text" name="t9" placeholder="Enter Aadhar No." style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>  </td></tr>
+	
+	<tr><td><br />	Photo :</td><td><br />  <input type="file" name="f" />  </td></tr>
+	
+	<tr><td colspan="2"><br /> <h2>Address Information</h2></td></tr>
+	
+	<tr><td><br /> Address Line 1 : </td> <td><br /> <input type="text" name="t10" placeholder="Enter House/Flat No." style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/>  </td></tr>
+	
+	<tr><td><br /> Address Line 2 : </td> <td><br /> <input type="text" name="t11" placeholder="Enter Address" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br /> City : </td> <td><br /> <input type="text" name="t12" placeholder="Enter City" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br />District : </td> <td><br /> <input type="text" name="t13" placeholder="Enter District" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br /> Tehsil : </td><td><br /> <input type="text" name="t14" placeholder="Enter Tehsil" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br /> State : </td><td><br /> <input type="text" name="t15" placeholder="Enter State" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br /> Country : </td><td><br /> <input type="text" name="t16" placeholder="Enter Country" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br /> Pincode : </td><td><br /> <input type="text" name="t17" placeholder="Enter Pin Code" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td colspan="2"><br /><font color="#00CC33" ><h2> Party Information </h2></font></td></tr>
+	
+	<tr><td><br /> Party Name : </td> <td><br /> <input type="text" name="t18" placeholder="Enter Party Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br /> Candidate Name : </td><td><br /> <input type="text" name="t19" placeholder="Enter Full Name" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br /> Vidhan sabha no. : </td><td><br /> <input type="text" name="t19" placeholder="Enter Nmber" style="padding-left:5px; width:350px; height:25px; border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000;"/> </td></tr>
+	
+	<tr><td><br /> Logo : </td> <td><br /> <input type="file" name="t20" /> </td></tr>
+	
+	<tr><td><br /> Captcha : </td> <td><br /> 
+	<!-- START CAPTCHA -->
+<br>
+<div class="capbox">
+<div id="CaptchaDiv"></div>
+<div class="capbox-inner">
+Type the above number:<br>
+
+<input type="hidden" id="txtCaptcha">
+<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+
+</div>
+</div>
+<br><br>
+<!-- END CAPTCHA -->
+
+	</td></tr>
+	
+	<tr><td><br />  </td> <td><br /> <input type="checkbox" name="t22" /> I accept all <a href="#" style="text-decoration:none;">terms & conditions</a>  . </td></tr>
+	<tr><td colspan="2"><br /><br /> 
+	Sign. : <input type="text" name="t23" placeholder="Enter Name" style="border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000; padding-left:5px; width:170px; height:25px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Place : <input type="text" name="t24" placeholder="Enter Place" style="border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000; padding-left:5px; width:170px; height:25px;" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Date : <input type="text" name="t25" placeholder="Enter Current Date" style="border-top:0px; border-left:0px; border-right:0px; border-bottom-color:#000; padding-left:5px; width:170px; height:25px;" /> </td></tr>
+	
+	<tr><td colspan="2"><br /><br /><br /><center><input type="button" name="t22" value="Submit" style="width:200px; height:50px; background-color:#0033FF; color:#FFFFFF; font-size:20px;" /></center></td></tr>
+	
+</form>
+<script type="text/javascript">
+
+// Captcha Script
+
+function checkform(theform){
+var why = "";
+
+if(theform.CaptchaInput.value == ""){
+why += "- Please Enter CAPTCHA Code.\n";
+}
+if(theform.CaptchaInput.value != ""){
+if(ValidCaptcha(theform.CaptchaInput.value) == false){
+why += "- The CAPTCHA Code Does Not Match.\n";
+}
+}
+if(why != ""){
+alert(why);
+return false;
+}
+}
+
+var a = Math.ceil(Math.random() * 9)+ '';
+var b = Math.ceil(Math.random() * 9)+ '';
+var c = Math.ceil(Math.random() * 9)+ '';
+var d = Math.ceil(Math.random() * 9)+ '';
+var e = Math.ceil(Math.random() * 9)+ '';
+
+var code = a + b + c + d + e;
+document.getElementById("txtCaptcha").value = code;
+document.getElementById("CaptchaDiv").innerHTML = code;
+
+// Validate input against the generated number
+function ValidCaptcha(){
+var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+if (str1 == str2){
+return true;
+}else{
+return false;
+}
+}
+
+// Remove the spaces from the entered and generated code
+function removeSpaces(string){
+return string.split(' ').join('');
+}
+</script>
+	</div></td>
+  </tr>
+</table>
+
+	</center>
+	</td></tr>
+	  <tr>
+    <td height="200" bgcolor="#00CC33">
+        <br/><center>
+        <center><table width="93%" border="0" style="margin-bottom:30px;">
+<tr> <td> <h2 style="text-align:center">Contact</h2> </td> </tr>
+<tr><td> <center><font style="font-size:15px;">Address<br />Tel.<br />Mob.<br /></font></center> </td></tr>
+</table></center>
+<font color="#FFF">_____________________________________________________________________________________________________________________________________________________________________</font>
+<br/>
+<p style="font-size:16px;"><font color="#FFFFFF"> Copyright � 2019-20 . All Rights Reserved .| Designed by </font> APOORV AGARWAL , DHRUV NARAYAN TIWARI & CHANDRAJEET YADAV<font color="#FFFFFF"> (KS Vira College of Engg. & Management, Bijnor) . </font></p>
+    
+	</center></td>
+  </tr>
+</table>
+</center1>
+
+</body>
+</html>

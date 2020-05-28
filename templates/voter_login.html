@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}voter login{% endblock title %}
+
+{% block body %}
+<tr>
+  <td >
+	<center>
+		
+		<table width="70%" border="0">
+<tr>
+		<td height="500px" width="35%">
+		<div id="container">
+		<center> <br /><br />
+		<img src="/static/image/8.jpg" style="width:250px; height:200px;" /><br /><br /><br /><br>
+	</center>
+		<font color="#FFFFFF" style="font-size:x-large;">
+		Keep Vote<br /><u>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></font><br /><br />
+		<font color="#FFFFFF" size="+1">We do not share your personal details with anyone .</font>
+		</center>
+		</div></td>
+		<!--Login form-->
+		<td>
+		<div id="container1"><br />
+	
+	<form id="forml" name="forml" method="post" action="job.php" onSubmit="return valid(this)">
+	
+		Name<br /><br />
+		<input type="text" name="t1" style="padding-left:10px; border-radius:0px 0px 10px 10px; border-top:thick; border-bottom-color:#000000; height:30px; font-size:18px; width:390px; border-left:thick; border-right:thick" placeholder="Enter Name" /><br /><br /><br />
+		
+		Aadhar Number<br /><br />
+		<input type="text" name="t2" style="padding-left:10px; border-radius:0px 0px 10px 10px; border-top:thick; border-bottom-color:#000000; height:30px; font-size:18px; width:390px; border-left:thick; border-right:thick" placeholder="Enter Aadhar Number" /><br /><br /><br />
+		
+		DOB <br /><br />
+		<input type="date" name="t3" style="padding-left:10px; border-radius:0px 0px 10px 10px; border-top:thick; border-bottom-color:#000000; height:30px; font-size:18px; width:390px; border-left:thick; border-right:thick" placeholder="Enter DOB" /><br /><br /><br />
+	
+		<center><input type="submit" name="b" style="border-radius: 10px 10px 10px 10px; width:300px; height:50px; background-color:#CC0033; font-size:24px; color:#FFFFFF; border-style:double;" value="Continue" /></center><br /><br />
+	</form>
+		</div></td>
+	  </tr>
+	</table>
+	
+		</center>
+		</td></tr>
+
+{% endblock body %}
+
